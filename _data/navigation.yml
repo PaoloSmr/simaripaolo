@@ -1,0 +1,15 @@
+# Menu in alto. L'ordine qui è l'ordine nel menu.
+# Per togliere una voce, cancella le sue due righe (title + url).
+
+main:
+  - title: "Pubblicazioni"
+    url: /publications/
+
+  - title: "Interventi"
+    url: /talks/
+
+  - title: "Didattica"
+    url: /teaching/
+
+  - title: "CV"
+    url: /cv/
