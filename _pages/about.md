@@ -12,18 +12,18 @@ redirect_from:
   **grassetto**, *corsivo*, [testo del link](https://indirizzo), elenchi con "-".
 -->
 
-Sono dottorando di ricerca in **Scienze Economiche e Aziendali** (XXXIX ciclo, curriculum Politica Economica) presso il Dipartimento di Economia, Statistica e Finanza "Giovanni Anania" (DESF) dell'**Università della Calabria**, con una borsa PNRR per dottorati innovativi (D.M. 117/2023). Il mio supervisore è il Prof. Giuseppe Rose.
+Benvenuto! Sono dottorando di ricerca in **Scienze Economiche e Aziendali** all'**Università della Calabria** (Dipartimento di Economia, Statistica e Finanza "Giovanni Anania"), con una borsa PNRR per dottorati innovativi. Il mio supervisore è il Prof. Giuseppe Rose.
 
-La mia ricerca studia l'**economia della violenza di genere**: valuto, con metodi quasi-sperimentali e dati amministrativi, l'effetto delle politiche di protezione e sostegno per le donne vittime di violenza in Italia.
+Mi occupo di **political economy**, **economia pubblica** e **financial economics**. Uso dati amministrativi e metodi quasi-sperimentali per valutare l'effetto delle politiche pubbliche, con un'attenzione particolare alle politiche di protezione e sostegno per le donne vittime di violenza. Ho svolto un periodo di ricerca al CORE (UCLouvain) e un tirocinio di ricerca presso la Banca d'Italia.
 
 Interessi di ricerca
 ======
+- Political economy
+- Financial economics
+- Economia pubblica e politica fiscale
 - Economia della violenza di genere
-- Valutazione delle politiche pubbliche
-- Inferenza causale con dati osservazionali: difference-in-differences con adozione scaglionata, regression discontinuity, matching, variabili strumentali
-- Economia del lavoro e trasferimenti monetari
+- Valutazione delle politiche pubbliche e inferenza causale: difference-in-differences con adozione scaglionata, regression discontinuity, matching, variabili strumentali
 - Econometria delle reti
-- Dati amministrativi collegati
 
 Progetti in corso
 ======

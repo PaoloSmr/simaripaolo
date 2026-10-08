@@ -11,7 +11,7 @@ site_theme               : "default"   # temi: "default", "air", "sunrise", "min
 title                    : "Paolo Simari"
 title_separator          : "-"
 name                     : &name "Paolo Simari"
-description              : &description "Paolo Simari, dottorando in Economia all'Università della Calabria. Economia della violenza di genere e valutazione delle politiche pubbliche."
+description              : &description "Paolo Simari, dottorando in Economia all'Università della Calabria. Political economy, financial economics, economia pubblica e politiche contro la violenza di genere."
 
 # Indirizzo del sito.
 # Ora il repository si chiama "simaripaolo", quindi il sito è su
@@ -26,7 +26,7 @@ author:
   avatar           : "paolo-simari.jpg"   # la foto è in images/
   name             : "Paolo Simari"
   pronouns         :
-  bio              : "Dottorando in Economia. Violenza di genere e valutazione delle politiche pubbliche."
+  bio              : "Dottorando in Economia. Political economy, public e financial economics."
   location         : "Rende (CS), Italia"
   employer         : "Università della Calabria"
   uri              : # URL di un altro sito, es. la pagina istituzionale

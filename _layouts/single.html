@@ -38,6 +38,7 @@ layout: default
           <p> {{ page.type }}, <i>{{ page.venue }}</i>{% unless page.hide_year %}, {{ page.date | default: "1900-01-01" | date: "%Y" }}{% endunless %} </p>
         {% elsif page.venue and page.date %}
           <p>{% if page.venue %}<i>{{ page.venue }}</i>{% endif %}{% unless page.hide_year %}{% if page.venue %}, {% endif %}{{ page.date | default: "1900-01-01" | date: "%Y" }}{% endunless %}</p>
+          {% if page.collection == 'publications' %}{% include pub-extra.html post=page full=true %}{% endif %}
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}    
