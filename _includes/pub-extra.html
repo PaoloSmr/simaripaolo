@@ -1,0 +1,44 @@
+{% comment %}
+  Dettagli extra delle pubblicazioni: stato (bollino), premio, coautori,
+  abstract apribile e presentazioni. Campi nel front matter:
+    status, award, coauthors, presentations (elenco).
+  include.full = true nella pagina del singolo lavoro (niente riquadro apribile).
+{% endcomment %}
+{% assign p = include.post %}
+{% if p.status or p.award %}
+  <p class="pub-badges">
+    {% if p.status %}
+      {% assign s = p.status | downcase %}
+      {% if s contains 'publish' or s contains 'pubblicat' or s contains 'accept' or s contains 'accettat' or s contains 'forthcoming' %}
+        {% assign cls = 'pub' %}
+      {% elsif s contains 'r&r' or s contains 'revise' or s contains 'revision' %}
+        {% assign cls = 'rr' %}
+      {% else %}
+        {% assign cls = 'review' %}
+      {% endif %}
+      <span class="pub-badge pub-badge--{{ cls }}">{{ p.status | escape }}</span>
+    {% endif %}
+    {% if p.award %}<span class="pub-badge pub-badge--award">{{ p.award | escape }}</span>{% endif %}
+  </p>
+{% endif %}
+{% if p.coauthors %}
+  <p class="pub-coauthors">con {{ p.coauthors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+{% endif %}
+{% if include.full %}
+  {% if p.presentations %}
+    <p class="pub-pres-title">Presentazioni</p>
+    <ul class="pub-pres">{% for x in p.presentations %}<li>{{ x }}</li>{% endfor %}</ul>
+  {% endif %}
+{% else %}
+  {% capture body %}{{ p.content | strip }}{% endcapture %}
+  {% if body != '' or p.presentations %}
+    <details class="pub-details">
+      <summary>{% if body != '' %}Abstract{% if p.presentations %} e presentazioni{% endif %}{% else %}Presentazioni{% endif %}</summary>
+      {% if body != '' %}<div class="pub-abstract">{{ body }}</div>{% endif %}
+      {% if p.presentations %}
+        <p class="pub-pres-title">Presentazioni</p>
+        <ul class="pub-pres">{% for x in p.presentations %}<li>{{ x }}</li>{% endfor %}</ul>
+      {% endif %}
+    </details>
+  {% endif %}
+{% endif %}

@@ -46,6 +46,19 @@ Il campo `category` decide in quale sezione della pagina Ricerca compare: `manus
 
 La riga `hide_year: true` nasconde l'anno (utile quando non è ancora definito).
 
+**Bollini, coautori e presentazioni.** Nei file di `_publications/` puoi aggiungere:
+
+```yaml
+status: "Under review"          # bollino: verde se contiene Published/Accepted, arancione se R&R, blu negli altri casi
+award: "Job Market Paper"       # bollino viola (premi, JMP, fellowship)
+coauthors: "[G. Rose](https://...) e P. Ordine"
+presentations:
+  - "Conferenza SIEP, Università di Modena, 2026"
+  - "EEA, Bordeaux, 2025"
+```
+
+Il testo sotto le righe `---` diventa l'abstract, che si apre con un clic nella pagina Ricerca.
+
 **Aggiornare il CV:** sostituisci `files/cv.pdf` (Upload files, stesso nome). Ricordati di usare una versione **senza** codice fiscale, indirizzo di casa e telefono.
 
 ## Se qualcosa non funziona

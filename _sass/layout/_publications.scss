@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Pubblicazioni: bollini di stato, coautori, abstract apribile
+   ========================================================================== */
+
+.pub-badges {
+  margin: 0.2em 0 0.4em;
+}
+
+.pub-badge {
+  display: inline-block;
+  margin: 0 0.4em 0.3em 0;
+  padding: 0.15em 0.6em;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.72em;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+
+  &--pub    { color: #2e7d32; background: rgba(46, 125, 50, 0.08); }
+  &--rr     { color: #b26a00; background: rgba(178, 106, 0, 0.08); }
+  &--review { color: #1f6fb2; background: rgba(31, 111, 178, 0.08); }
+  &--award  { color: #7b3fa0; background: rgba(123, 63, 160, 0.08); }
+}
+
+html[data-theme="dark"] .pub-badge {
+  &--pub    { color: #81c784; }
+  &--rr     { color: #ffb74d; }
+  &--review { color: #64b5f6; }
+  &--award  { color: #ce93d8; }
+}
+
+.pub-coauthors {
+  margin: 0 0 0.4em;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.pub-details {
+  margin: 0.3em 0 1em;
+
+  summary {
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--global-link-color);
+    list-style-position: inside;
+  }
+
+  .pub-abstract {
+    margin-top: 0.6em;
+    font-size: 0.9em;
+    text-align: justify;
+  }
+}
+
+.pub-pres-title {
+  margin: 0.6em 0 0.2em;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.pub-pres {
+  margin-top: 0;
+  font-size: 0.85em;
+}
