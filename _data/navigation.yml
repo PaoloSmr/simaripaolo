@@ -1,12 +1,12 @@
 # Menu in alto. L'ordine qui è l'ordine nel menu.
 # Per togliere una voce, cancella le sue due righe (title + url).
+# Quando avrai presentato un lavoro a un convegno, aggiungi:
+#  - title: "Interventi"
+#    url: /talks/
 
 main:
-  - title: "Pubblicazioni"
+  - title: "Ricerca"
     url: /publications/
-
-  - title: "Interventi"
-    url: /talks/
 
   - title: "Didattica"
     url: /teaching/

@@ -11,7 +11,7 @@ site_theme               : "default"   # temi: "default", "air", "sunrise", "min
 title                    : "Paolo Simari"
 title_separator          : "-"
 name                     : &name "Paolo Simari"
-description              : &description "Sito accademico di Paolo Simari: ricerca, pubblicazioni e CV"
+description              : &description "Paolo Simari, dottorando in Economia all'Università della Calabria. Economia della violenza di genere e valutazione delle politiche pubbliche."
 
 # Indirizzo del sito.
 # Ora il repository si chiama "simaripaolo", quindi il sito è su
@@ -23,14 +23,14 @@ repository               : "PaoloSmr/simaripaolo"
 
 # Barra laterale con i tuoi dati.
 author:
-  avatar           : "profile.png"   # metti la tua foto in images/ e scrivi qui il nome del file
+  avatar           : "paolo-simari.jpg"   # la foto è in images/
   name             : "Paolo Simari"
   pronouns         :
-  bio              : "Ricercatore [DA COMPLETARE: es. dottorando in ... presso ...]"
-  location         : "[DA COMPLETARE: città], Italia"
-  employer         : "[DA COMPLETARE: università / ente]"
+  bio              : "Dottorando in Economia. Violenza di genere e valutazione delle politiche pubbliche."
+  location         : "Rende (CS), Italia"
+  employer         : "Università della Calabria"
   uri              : # URL di un altro sito, es. la pagina istituzionale
-  email            : # es. "nome.cognome@universita.it" (verrà mostrata pubblicamente)
+  email            : "simaripaolo@gmail.com"   # mostrata pubblicamente
 
   # Profili accademici (incolla l'indirizzo completo)
   academia         :
@@ -65,7 +65,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # solo il nome utente, es. "paolo-simari"
+  linkedin         : "paolo-simari"
   mastodon         :
   medium           :
   pinterest        :
@@ -87,6 +87,10 @@ publication_category:
     title: 'Articoli su rivista'
   workingpapers:
     title: 'Working paper'
+  workinprogress:
+    title: 'Lavori in corso'
+  datasets:
+    title: 'Dataset di ricerca'
   books:
     title: 'Libri e capitoli'
   conferences:

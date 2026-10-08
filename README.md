@@ -19,13 +19,11 @@ Indirizzo: **https://paolosmr.github.io/simaripaolo**
 | Nome, bio breve, università, email, link a Scholar/ORCID/LinkedIn | `_config.yml` (sezione `author`) |
 | Testo della home | `_pages/about.md` |
 | CV | `_pages/cv.md` + il PDF in `files/cv.pdf` |
-| Pubblicazioni | un file per ciascuna in `_publications/` |
+| Ricerca (working paper, pubblicazioni, dataset) | un file per ciascuno in `_publications/` |
 | Convegni e seminari | un file per ciascuno in `_talks/` |
 | Didattica | un file per ciascun corso in `_teaching/` |
 | Foto | carica in `images/` e scrivi il nome del file in `_config.yml` → `avatar` |
 | Voci del menu | `_data/navigation.yml` |
-
-Cerca **`[DA COMPLETARE]`** nei file per trovare tutto quello che manca.
 
 ## Come modificare un file dal sito di GitHub
 
@@ -37,14 +35,18 @@ Per caricare un PDF o una foto: apri la cartella (`files/` o `images/`) → **Ad
 
 ## Aggiungere una pubblicazione
 
-1. Apri `_publications/2025-01-01-esempio-articolo.md` e copiane il contenuto.
-2. Nella cartella `_publications/` → **Add file → Create new file** e chiamalo ad esempio `2026-03-15-titolo-breve.md`.
-3. Incolla il contenuto, compila titolo, data, rivista, DOI e citazione, e **cancella la riga `published: false`**.
+1. Apri una pubblicazione già presente in `_publications/` (ad esempio `2026-08-24-stanze-ascolto-femminicidi.md`) e copiane il contenuto.
+2. Nella cartella `_publications/` → **Add file → Create new file** e chiamalo ad esempio `2027-03-15-titolo-breve.md`.
+3. Incolla il contenuto e cambia titolo, data, rivista e testo. Se vuoi, aggiungi `paperurl: "https://doi.org/..."` (link al paper) e `citation: '...'` (citazione completa).
 4. **Commit changes**.
 
-Interventi (`_talks/`) e didattica (`_teaching/`) funzionano allo stesso modo. Ogni cartella ha il suo file di esempio, che resta nascosto.
+Didattica (`_teaching/`) funziona allo stesso modo. Per i convegni in cui presenti un lavoro c'è un modello nascosto in `_talks/`: copialo, cancella la riga `published: false` e aggiungi la voce "Interventi" al menu in `_data/navigation.yml`.
 
-Il campo `category` delle pubblicazioni decide in quale sezione compare: `manuscripts` (articoli su rivista), `workingpapers`, `books` (libri e capitoli) o `conferences` (contributi a convegni).
+Il campo `category` decide in quale sezione della pagina Ricerca compare: `manuscripts` (articoli su rivista), `workingpapers`, `workinprogress` (lavori in corso), `datasets`, `books` (libri e capitoli) o `conferences` (contributi a convegni). Quando un working paper viene pubblicato, basta cambiare `category` in `manuscripts` e `venue` con il nome della rivista.
+
+La riga `hide_year: true` nasconde l'anno (utile quando non è ancora definito).
+
+**Aggiornare il CV:** sostituisci `files/cv.pdf` (Upload files, stesso nome). Ricordati di usare una versione **senza** codice fiscale, indirizzo di casa e telefono.
 
 ## Se qualcosa non funziona
 
